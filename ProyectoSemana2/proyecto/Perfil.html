@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Perfil de Usuario</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    function toggleMenu() {
+      document.getElementById('menu').classList.toggle('hidden');
+    }
+
+    function toggleModal() {
+      document.getElementById('loginModal').classList.toggle('hidden');
+    }
+  </script>
+</head>
+<body class="bg-gray-100">
+
+
+  <header class="bg-blue-500 text-white py-4">
+    <nav class="flex justify-center space-x-4">
+            <button id="menu-button" class="md:hidden text-blue-600 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+            <ul class="hidden md:flex md:space-x-4">
+              <a href="Inicio.html" class="hover:underline">Inicio</a>
+              <a href="Busqueda.html" class="hover:underline">Búsqueda</a>
+              <a href="SobreNosotros.html" class="hover:underline">Sobre Nosotros</a>
+              <a href="Categorias.html" class="hover:underline">Categorias</a>
+              <a href="Comentarios.html" class="hover:underline">Valoraciones</a>
+              <a href="AñadirRecetas.html" class="hover:underline">Añadir Recetas</a>
+              <a href="Recetas.html" class="hover:underline">Recetas</a>
+              <a href="Perfil.html" class="hover:underline">Perfil</a>
+            </ul>
+        </nav>
+        <section id="mobile-menu" class="mobile-menu hidden flex-col space-y-4 bg-gray-100 shadow p-4">
+            <ul class="flex flex-col space-y-4">
+              <a href="Inicio.html" class="hover:underline">Inicio</a>
+              <a href="Busqueda.html" class="hover:underline">Búsqueda</a>
+              <a href="SobreNosotros.html" class="hover:underline">Sobre Nosotros</a>
+              <a href="Categorias.html" class="hover:underline">Categorias</a>
+              <a href="Comentarios.html" class="hover:underline">Valoraciones</a>
+              <a href="AñadirRecetas.html" class="hover:underline">Añadir Recetas</a>
+              <a href="Recetas.html" class="hover:underline">Recetas</a>
+              <a href="Perfil.html" class="hover:underline">Perfil</a>
+              
+            </ul>
+        </section>
+    </nav>
+  </header>
+
+<main class="max-w-5xl mx-auto px-4 py-8 text-center">
+  <img src="usuario.jpg" class="w-32 h-32 rounded-full mx-auto border-4 border-blue-500 mb-4" />
+  <h2 class="text-2xl font-bold">Juan Pérez</h2>
+  <p class="text-gray-600 mb-8">@juanchef</p> 
+
+  
+  <section class="text-left">
+    <h3 class="text-xl font-semibold mb-4">Mis Recetas</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <article class="bg-white rounded-lg shadow-md hover:shadow-xl transition hover:scale-105">
+        <img src="assets/images/paella.jpg" class="w-full h-40 object-cover rounded-t-lg" />
+        <div class="p-4">
+          <h4 class="font-bold">Paella Valenciana</h4>
+          <div class="text-yellow-400 mt-1">⭐⭐⭐⭐⭐</div>
+        </div>
+      </article>
+      <article class="bg-white rounded-lg shadow-md hover:shadow-xl transition hover:scale-105">
+        <img src="assets/images/sushi.jpg" class="w-full h-40 object-cover rounded-t-lg" />
+        <div class="p-4">
+          <h4 class="font-bold">Sushi Japonés</h4>
+          <div class="text-yellow-400 mt-1">⭐⭐⭐⭐</div>
+        </div>
+      </article>
+      <article class="bg-white rounded-lg shadow-md hover:shadow-xl transition hover:scale-105">
+        <img src="assets/images/tacos.jpg" class="w-full h-40 object-cover rounded-t-lg" />
+        <div class="p-4">
+          <h4 class="font-bold">Tacos al Pastor</h4>
+          <div class="text-yellow-400 mt-1">⭐⭐⭐⭐⭐</div>
+        </div>
+      </article>
+    </div>
+
+    
+    <div class="flex justify-center mt-8 space-x-2">
+      <button class="bg-white border px-3 py-1 rounded hover:bg-blue-100">1</button>
+      <button class="bg-white border px-3 py-1 rounded hover:bg-blue-100">2</button>
+      <button class="bg-white border px-3 py-1 rounded hover:bg-blue-100">3</button>
+    </div>
+  </section>
+
+ 
+  <section class="mt-12 text-left">
+    <h3 class="text-xl font-semibold mb-4">Añadir Receta</h3>
+    <form class="bg-white p-6 rounded-lg shadow-md space-y-4">
+      <input type="text" placeholder="Nombre de la receta" class="w-full border p-2 rounded" />
+      <textarea placeholder="Descripción" class="w-full border p-2 rounded"></textarea>
+      <input type="file" class="w-full" />
+      <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Publicar</button>
+    </form>
+  </section>
+</main>
+
+
+<footer class="bg-blue-700 text-white mt-12">
+  <div class="max-w-6xl mx-auto px-6 py-8 grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left">
+    <div>
+      <h4 class="font-semibold mb-2">Recetas del Mundo</h4>
+      <p>Descubre y comparte recetas de todos los países.</p>
+    </div>
+    <div>
+      <h4 class="font-semibold mb-2">Enlaces</h4>
+      <ul>
+        <li><a href="Inicio.html" class="hover:underline">Inicio</a></li>
+        <li><a href="Recetas.html" class="hover:underline">Recetas</a></li>
+        <li><a href="Contacto.html" class="hover:underline">Contacto</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-semibold mb-2">Contacto</h4>
+      <p>soporte@recetasdelmundo.com</p>
+      <p>+34 123 456 789</p>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>

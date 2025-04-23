@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Búsqueda de Recetas</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+  <header class="bg-blue-500 text-white py-4">
+    <nav class="flex justify-center space-x-4">
+            <button id="menu-button" class="md:hidden text-blue-600 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+            <ul class="hidden md:flex md:space-x-4">
+              <a href="Inicio.html" class="hover:underline">Inicio</a>
+              <a href="Busqueda.html" class="hover:underline">Búsqueda</a>
+              <a href="SobreNosotros.html" class="hover:underline">Sobre Nosotros</a>
+              <a href="Categorias.html" class="hover:underline">Categorias</a>
+              <a href="Comentarios.html" class="hover:underline">Valoraciones</a>
+              <a href="AñadirRecetas.html" class="hover:underline">Añadir Recetas</a>
+              <a href="Recetas.html" class="hover:underline">Recetas</a>
+              <a href="Perfil.html" class="hover:underline">Perfil</a>
+            </ul>
+        </nav>
+        <section id="mobile-menu" class="mobile-menu hidden flex-col space-y-4 bg-gray-100 shadow p-4">
+            <ul class="flex flex-col space-y-4">
+              <a href="Inicio.html" class="hover:underline">Inicio</a>
+              <a href="Busqueda.html" class="hover:underline">Búsqueda</a>
+              <a href="SobreNosotros.html" class="hover:underline">Sobre Nosotros</a>
+              <a href="Categorias.html" class="hover:underline">Categorias</a>
+              <a href="Comentarios.html" class="hover:underline">Valoraciones</a>
+              <a href="AñadirRecetas.html" class="hover:underline">Añadir Recetas</a>
+              <a href="Recetas.html" class="hover:underline">Recetas</a>
+              <a href="Perfil.html" class="hover:underline">Perfil</a>
+              
+            </ul>
+        </section>
+    </nav>
+  </header>
+
+ 
+  <main class="max-w-6xl mx-auto p-6">
+    <h2 class="text-2xl font-semibold text-gray-800 mb-4">Buscar Recetas</h2>
+
+    <input type="text" placeholder="Buscar por nombre o ingrediente..." class="w-full p-3 border border-gray-300 rounded-lg mb-6"/>
+
+    <div class="grid md:grid-cols-3 gap-4 mb-8">
+      <select class="p-3 border border-gray-300 rounded-lg">
+        <option>Categoría</option>
+        <option>Mexicana</option>
+        <option>Francesa</option>
+        <option>Japonesa</option>
+      </select>
+      <select class="p-3 border border-gray-300 rounded-lg">
+        <option>Dificultad</option>
+        <option>Fácil</option>
+        <option>Media</option>
+        <option>Difícil</option>
+      </select>
+      <select class="p-3 border border-gray-300 rounded-lg">
+        <option>Tiempo</option>
+        <option>Menos de 30 min</option>
+        <option>30-60 min</option>
+        <option>Más de 60 min</option>
+      </select>
+    </div>
+
+    
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+        <img src="assets/images/tacos.jpg" alt="Tacos" class="w-full h-40 object-cover"/>
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">Tacos</h3>
+          <p class="text-sm text-gray-500">Mexicana - 30 min - Fácil</p>
+        </div>
+      </article>
+      <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+        <img src="assets/images/sushi.jpg" alt="Sushi" class="w-full h-40 object-cover"/>
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">Sushi</h3>
+          <p class="text-sm text-gray-500">Japonesa - 60 min - Media</p>
+        </div>
+      </article>
+      <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+        <img src="assets/images/coq au vin.jpg" alt="Coq au vin" class="w-full h-40 object-cover"/>
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">Coq au vin</h3>
+          <p class="text-sm text-gray-500">Francesa - 25 min - Fácil</p>
+        </div>
+      </article>
+    </section>
+
+    
+    <div class="flex justify-center mt-8 space-x-2">
+      <button class="px-4 py-2 bg-blue-500 text-white rounded-md">1</button>
+      <button class="px-4 py-2 bg-gray-300 text-gray-700 rounded-md">2</button>
+      <button class="px-4 py-2 bg-gray-300 text-gray-700 rounded-md">3</button>
+    </div>
+  </main>
+
+
+  <footer class="bg-blue-700 text-white mt-12">
+    <div class="max-w-6xl mx-auto px-6 py-8 grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left">
+      <div>
+        <h4 class="font-semibold mb-2">Recetas del Mundo</h4>
+        <p>Descubre y comparte recetas de todos los países.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">Enlaces</h4>
+        <ul>
+          <li><a href="Inicio.html" class="hover:underline">Inicio</a></li>
+          <li><a href="Recetas.html" class="hover:underline">Recetas</a></li>
+          <li><a href="Contacto.html" class="hover:underline">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">Contacto</h4>
+        <p>soporte@recetasdelmundo.com</p>
+        <p>+34 123 456 789</p>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+</html>

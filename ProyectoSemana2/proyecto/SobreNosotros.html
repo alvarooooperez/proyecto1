@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Nosotros</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+  <header class="bg-blue-500 text-white py-4">
+    <nav class="flex justify-center space-x-4">
+            <button id="menu-button" class="md:hidden text-blue-600 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+            <ul class="hidden md:flex md:space-x-4">
+              <a href="Inicio.html" class="hover:underline">Inicio</a>
+              <a href="Busqueda.html" class="hover:underline">Búsqueda</a>
+              <a href="SobreNosotros.html" class="hover:underline">Sobre Nosotros</a>
+              <a href="Categorias.html" class="hover:underline">Categorias</a>
+              <a href="Comentarios.html" class="hover:underline">Valoraciones</a>
+              <a href="AñadirRecetas.html" class="hover:underline">Añadir Recetas</a>
+              <a href="Recetas.html" class="hover:underline">Recetas</a>
+              <a href="Perfil.html" class="hover:underline">Perfil</a>
+            </ul>
+        </nav>
+        <section id="mobile-menu" class="mobile-menu hidden flex-col space-y-4 bg-gray-100 shadow p-4">
+            <ul class="flex flex-col space-y-4">
+              <a href="Inicio.html" class="hover:underline">Inicio</a>
+              <a href="Busqueda.html" class="hover:underline">Búsqueda</a>
+              <a href="SobreNosotros.html" class="hover:underline">Sobre Nosotros</a>
+              <a href="Categorias.html" class="hover:underline">Categorias</a>
+              <a href="Comentarios.html" class="hover:underline">Valoraciones</a>
+              <a href="AñadirRecetas.html" class="hover:underline">Añadir Recetas</a>
+              <a href="Recetas.html" class="hover:underline">Recetas</a>
+              <a href="Perfil.html" class="hover:underline">Perfil</a>
+              
+            </ul>
+        </section>
+    </nav>
+  </header>
+  
+  <main class="p-8 max-w-4xl mx-auto">
+    <h1 class="text-3xl font-bold text-blue-500 text-center">Sobre Nosotros</h1>
+    <p class="text-gray-700 text-lg text-center mt-2">Exploramos y compartimos los sabores más auténticos del mundo.</p>
+    
+    <section class="mt-8 flex flex-col md:flex-row items-center">
+      <img src="assets/images/SobreNosotros.jpg" alt="Equipo de trabajo" class="w-full md:w-1/2 rounded-lg shadow-md">
+      <section class="md:ml-6 mt-6 md:mt-0">
+        <h2 class="text-2xl font-semibold text-gray-800">Nuestra Historia</h2>
+        <p class="text-gray-600 mt-2">Somos un equipo apasionado por la gastronomía que busca conectar culturas a través de sus sabores. Nuestra misión es acercarte a las tradiciones más auténticas del mundo.</p>
+      </section>
+    </section>
+    
+    <section class="mt-8 text-center">
+      <h2 class="text-2xl font-semibold text-gray-800">Nuestro Compromiso</h2>
+      <p class="text-gray-600 mt-2">Creemos en la diversidad gastronómica y en la importancia de preservar las recetas tradicionales. A través de nuestras experiencias, buscamos inspirar y educar a los amantes de la comida.</p>
+    </section>
+  </main>
+
+  <footer class="bg-blue-700 text-white mt-12">
+    <div class="max-w-6xl mx-auto px-6 py-8 grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left">
+      <div>
+        <h4 class="font-semibold mb-2">Recetas del Mundo</h4>
+        <p>Descubre y comparte recetas de todos los países.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">Enlaces</h4>
+        <ul>
+          <li><a href="Inicio.html" class="hover:underline">Inicio</a></li>
+          <li><a href="Recetas.html" class="hover:underline">Recetas</a></li>
+          <li><a href="Contacto.html" class="hover:underline">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">Contacto</h4>
+        <p>soporte@recetasdelmundo.com</p>
+        <p>+34 123 456 789</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
